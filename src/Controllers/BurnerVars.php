@@ -75,8 +75,8 @@ class BurnerVars
             $ret .= '<option value="' . $simpleDateFormat . '" ' 
                 . (($currStage == 'Early') ? 'style="color: #999;"' : '')
                 . (($simpleDateFormat == $preSel) ? ' SELECTED ' : '') . '>' . date("D n/j", $currDate) 
-                . (($numSats == 2 && date("D", $currDate) == 'Sat') ? ' (Man Burns!)' : '')
-                . (($numSats == 2 && date("D", $currDate) == 'Sun') ? ' (Temple Burns!)' : '')
+                . (($numSats == 3 && date("D", $currDate) == 'Sat') ? ' (Man Burns!)' : '')
+                . (($numSats == 3 && date("D", $currDate) == 'Sun') ? ' (Temple Burns!)' : '')
                 . '</option>';
             if ($currDate == strtotime($this->mainDates[2])) {
                 $ret .= '<option DISABLED > </option><option DISABLED >---LATE DEPARTURE---</option>';
